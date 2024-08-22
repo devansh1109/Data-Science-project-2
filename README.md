@@ -33,7 +33,7 @@ pip install pandas numpy nltk scikit-learn imbalanced-learn xgboost
 - **Model Training**: An XGBoost model is trained with specific hyperparameters.
 
 - **Evaluation**: The model is evaluated using accuracy and other classification metrics.
-
+```bash
 import pandas as pd
 import re
 import warnings
@@ -78,3 +78,4 @@ p_test_ints = np.vectorize(round)(p_test)
 accuracy = accuracy_score(y_test, p_test_ints)
 print("Test Accuracy: ", accuracy)
 print(classification_report(y_test, p_test_ints))
+```
